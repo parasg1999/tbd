@@ -1,13 +1,13 @@
 const siteMetadata = {
   title: 'Paras Gupta',
   author: 'Paras Gupta',
-  headerTitle: 'TailwindBlog',
-  description: 'Backend developer at Spenny, Freelancer at Home. Tap on the link to know more!',
+  headerTitle: 'Paras Gupta',
+  description: 'Backend developer at Spenny, Freelancer at Home.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://parasgupta.co',
-  // siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
-  siteLogo: '/static/images/logo.png',
+  siteRepo: 'https://github.com/parasg1999/parasgupta.co',
+  siteLogo: '/static/images/avatar.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
   email: 'hello@parasgupta.co',
@@ -28,7 +28,7 @@ const siteMetadata = {
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo
     // Please add your .env file and modify it according to your selection
-    provider: 'buttondown',
+    provider: '',
   },
   comment: {
     // If you want to use a commenting system other than giscus you have to add it to the
