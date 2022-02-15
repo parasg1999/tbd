@@ -1,0 +1,34 @@
+---
+title: 'Diary <> Feb 15, 2022'
+date: 2022-02-15
+tags: ['feb 2022', 'daily-diary']
+draft: false
+layout: PostSimple
+---
+
+### 04:00
+
+> Good morning! 
+
+I'm actually confused whether I can call this early or late. On one hand, I'm starting at 4 in the morning, and on the other hand, I'm writing after a month.
+
+The first order of business for the day is to fix the SHIB price issue on the website I made for comparing crypto prices across Indian exchanges [coincompare.in](https://coincomapre.in). The problem is that the coinswitch APIs are really unreliable, and when it gives data, I increase it by a percentage and then the final prices are calculated. Now this API gives the SHIB price as `0.00` which meant that the price is the cheapest there is for anything 🤷‍♂️
+
+### 04:40
+Fixed the issue by creating a utility function, and planning to extend it by creating a price history collection to store all the historical prices. Need to also think about the deployments! Currently I have to log into all of the hosts separately to deploy on each of them, seems to be a good time to learn about auto pull or hook URLs I guess.
+
+Now, I'll be working on creating the discord form for the events like [discord.mlh.io](discord.mlh.io). This will be helpful in gathering the data for future participants and help with the outreach and marketing. I'm thinking of creating a Next.js application with Tailwind since it seems like the best way to get a custom form up and running quickly. Let's get started.
+
+> Decided to make it open source as [discord-guard](https://github.com/parasg1999/discord-guard) 
+
+Checlist for the features  
+
+[x] Login using Discord.  
+[x] Persistent data storage.  
+[ ] Get/Set data only from persistent storage
+
+### 06:40
+Made a basic Next app with Discord login and database storage. Added database storage to it. Looking good for scratch.
+
+> Probably a long break 😬, gotta earn that paycheck!
+
