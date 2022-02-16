@@ -1,0 +1,31 @@
+---
+title: 'Diary <> Feb 16, 2022'
+date: 2022-02-16
+tags: ['feb 2022', 'daily-diary']
+draft: false
+layout: PostSimple
+---
+
+### 18:27
+
+> Hello!
+
+Gonna work on `Discord Guard`, the authentication is working fine. Now I need to start with displaying the data when the user is logged in. Let's see how that works.
+
+### 19:09
+
+Phew! So I've been looking at the ways to accomplish the task of updating user when the details are changed, and there is apparently no way to use `NextAuth.js` authentication for that. So, I'll be implementing custom Discord Oauth on my own. All the efforts in vain.
+
+Have been looking for some starter code for the same but looks like I'll have to implement from scratch.
+
+I'll start with the OAuth flow, and make API routes for login and callback.
+
+### 20:55
+
+Finaly done with OAuth flow. Able to login with Discord and get user data now. Just need to store data in the database now. 
+
+### 21:30
+
+So, I can store the data now. I am actually confused as to how I can verify that the user is logged in now. One way can be to get user details on every request using a middleware (using Discord API), and the other can be to just validate from the database that the user exists. 
+
+> Have a meeting now, will continue later.
